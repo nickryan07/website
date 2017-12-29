@@ -91,3 +91,49 @@ body {
     background-color: #ffffff;
     color: #635D5C;
 }
+
+/* Content-box */
+.content-box {
+    padding: 60px 0px 60px 0px;
+}
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px 0px 10px 0;
+}
+
+.content-title-underline {
+    width: 45px;
+    height: 2px;
+    background-color: #9B1D20;
+    margin: 0px auto 20px auto;
+}
+
+/* Services */
+.service-item {
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.service-item-icon i {
+    color: #9B1D20;
+    float: left;
+    margin-right: 5px;
+    padding: 15px;
+    width: 80px;
+    text-align: center;
+}
+.service-item:hover .service-item-icon i {
+    color: #ffffff;
+    background-color: #9B1D20;
+}
+
+
+
+
+
+
+
+
+
