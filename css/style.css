@@ -67,6 +67,7 @@ body {
 #top-img {
     height: 100%;
     background-image: url("../img/bg-home.jpg");
+    position: center;
 }
 
 #top-container {
