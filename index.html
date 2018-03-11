@@ -11,40 +11,95 @@
     <title>Nick Reimherr</title>
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- font awesome icons -->
     <link rel="stylesheet" href="css/font-awesome/css/fontawesome-all.css">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap4.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="css/animate/animate.css">
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-0.0.3.css">
 
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
+
+    <header>
+
+
+        <!--nav class="navbar navbar-expand-lg navbar-fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link">Left Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">Left Link 2</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link">Right Link 1</a>
+    </li>
+    <li class="navbar-item">
+      <a class="nav-link">Right Link 2</a>
+    </li>
+  </ul>
+</nav-->
+
+    </header>
+
     <!-- Top section -->
     <section id="top">
         <div id="top-img" class="bg-parallax animated fadeIn">
             <div id="top-container">
-				<canvas class="connecting-dots"></canvas>
-                <div id="top-content" class="text-center">
+
+                <canvas class="connecting-dots"></canvas>
+                <div class="container-fluid nav-top">
+                    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Navbar</a-->
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#" style="color: #14496D">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="#skills" style="color: #14496D">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="#about" style="color: #14496D">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="#projects" style="color: #14496D">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color: #14496D">More</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div id="top-content" class="text-center container">
                     <div id="top-header" class="animated bounce">
-                        <h3>Welcome <br> View my work below!</h3>
-                    </div>
-                    <div id="top-button" class="animated slideInUp">
-                        <a class="btn btn-lg btn-general btn-white" href="#work" role="button" title="View Work">View Work</a>
+                        <h3>Welcome<br>View my work below!</h3>
+                        <div id="top-button" class="animated slideInUp" style="">
+                            <a class="btn btn-lg btn-general btn-white js-scroll-trigger" href="#skills" role="button" title="View Work">Next</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-		
+
     </section>
-	
-	
-	
+
+
+
     <!-- Skills section -->
     <section id="skills">
         <div class="content-box">
@@ -55,80 +110,94 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="skill-item">
-                            <div class="skill-item-icon">
-                                <i class="fa fa-paint-brush fa-3x"></i>
-                            </div>
-                            <div class="skill-item-title">
-                                <h3>Web Design</h3>
-                            </div>
-                            <div class="skill-item-description">
-                                <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill-item">
-                            <div class="skill-item-icon">
-                                <i class="fa fa-laptop fa-3x"></i>
-                            </div>
-                            <div class="skill-item-title">
-                                <h3>Web Development</h3>
-                            </div>
-                            <div class="skill-item-description">
-                                <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                        <div class="wow animated rollIn" data-wow-duration=".75s" data-wow-delay=".5s">
+                            <div class="skill-item">
+                                <div class="skill-item-icon">
+                                    <i class="fas fa-code fa-3x"></i>
+                                </div>
+                                <div class="skill-item-title">
+                                    <h3>Object-Oriented Programming</h3>
+                                </div>
+                                <div class="skill-item-description">
+                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="skill-item">
-                            <div class="skill-item-icon">
-                                <i class="fa fa-tablet fa-3x"></i>
-                            </div>
-                            <div class="skill-item-title">
-                                <h3>Mobile Apps</h3>
-                            </div>
-                            <div class="skill-item-description">
-                                <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill-item">
-                            <div class="skill-item-icon">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                            <div class="skill-item-title">
-                                <h3>SEO Optimization</h3>
-                            </div>
-                            <div class="skill-item-description">
-                                <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                        <div class="wow animated rollIn" data-wow-duration=".75s" data-wow-delay=".5s">
+                            <div class="skill-item">
+                                <div class="skill-item-icon">
+                                    <i class="fa fa-laptop fa-3x"></i>
+                                </div>
+                                <div class="skill-item-title">
+                                    <h3>Web Development</h3>
+                                </div>
+                                <div class="skill-item-description">
+                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="skill-item">
-                            <div class="skill-item-icon">
-                                <i class="fa fa-edit fa-3x"></i>
+                        <div class="wow animated rollIn" data-wow-duration=".75s" data-wow-delay=".5s">
+                            <div class="skill-item">
+                                <div class="skill-item-icon">
+                                    <i class="fab fa-python fa-3x"></i>
+                                </div>
+                                <div class="skill-item-title">
+                                    <h3>Python</h3>
+                                </div>
+                                <div class="skill-item-description">
+                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                </div>
                             </div>
-                            <div class="skill-item-title">
-                                <h3>UX Design</h3>
-                            </div>
-                            <div class="skill-item-description">
-                                <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="wow animated rollIn" data-wow-duration=".75s" data-wow-delay=".5s">
+                            <div class="skill-item">
+                                <div class="skill-item-icon">
+                                    <i class="fas fa-database fa-3x"></i>
+                                </div>
+                                <div class="skill-item-title">
+                                    <h3>SQL</h3>
+                                </div>
+                                <div class="skill-item-description">
+                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="skill-item">
-                            <div class="skill-item-icon">
-                                <i class="fa fa-comments fa-3x"></i>
+                        <div class="wow animated rollIn" data-wow-duration=".75s" data-wow-delay=".5s">
+                            <div class="skill-item">
+                                <div class="skill-item-icon">
+                                    <i class="fas fa-redo-alt fa-3x"></i>
+                                </div>
+                                <div class="skill-item-title">
+                                    <h3>SDLC</h3>
+                                </div>
+                                <div class="skill-item-description">
+                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                </div>
                             </div>
-                            <div class="skill-item-title">
-                                <h3>Communication</h3>
-                            </div>
-                            <div class="skill-item-description">
-                                <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="wow animated rollIn" data-wow-duration=".75s" data-wow-delay=".5s">
+                            <div class="skill-item">
+                                <div class="skill-item-icon">
+                                    <i class="fa fa-comments fa-3x"></i>
+                                </div>
+                                <div class="skill-item-title">
+                                    <h3>Communication</h3>
+                                </div>
+                                <div class="skill-item-description">
+                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,16 +205,93 @@
             </div>
         </div>
     </section>
-	<h1>UNDER CONSTRUCTION</h1>
+
+    <section id="about">
+        <div class="container-fluid" style="height:800px; width:auto; background-color: #DCE7F4">
+            <div class="container">
+                <div class="content-box">
+                    <div class="content-title">
+                        <h3>About Me</h3>
+                        <div class="content-title-underline"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="text-align: center">
+                        <div class="circle-par">
+                            <div class="about-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="content-box">
+            <div class="content-title">
+                <h3>Projects</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-deck wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
+                            <div class="card project-card" style="width: auto;">
+                                <div class="card-top">
+                                    <i class="fa fa-users fa-5x"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Fablab Waitlist</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-scheme">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card project-card" style="width: auto">
+                                <div class="card-top">
+                                    <i class="far fa-comment fa-5x"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">UberChat</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-scheme">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card project-card" style="width: auto">
+                                <div class="card-top">
+                                    <i class="fas fa-cloud fa-5x"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloud Storage Server</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-scheme">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1>UNDER CONSTRUCTION</h1>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- js -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/bootstrap/bootstrap4.min.js"></script>
     <script src="js/angular.min.js"></script>
-	<script src="js/dots-0.0.1.js"></script>
+    <script src="js/dots-0.0.4.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 

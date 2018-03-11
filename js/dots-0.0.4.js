@@ -1,23 +1,21 @@
 var isMobile = false;
 
-var num = 150;
+var num = 110;
+
+var width = window.innerWidth;
+var height = window.innerHeight;
 
 var canvasDots = function() {
     var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),
-        colorDot = '#cecece',
-        color = '#cecece';
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+        colorDot = '#00AFEC',//#cecece, #23c9ff
+        color = '#00AFEC';
+    canvas.width = width;
+    canvas.height = height;
     canvas.style.display = 'block';
     ctx.fillStyle = colorDot;
-    ctx.lineWidth = .25;
+    ctx.lineWidth = .3;
     ctx.strokeStyle = color;
-    window.addEventListener('resize', function() {
-        //canvas.width = window.innerWidth;
-        //canvas.height = window.innerHeight;
-        return;
-    });
     var mousePosition = {
         x: 30 * canvas.width / 100,
         y: 30 * canvas.height / 100
@@ -37,7 +35,7 @@ var canvasDots = function() {
         this.vx = -.5 + Math.random();
         this.vy = -.5 + Math.random();
 
-        this.radius = .6 + 1.25*Math.random();
+        this.radius = .6 + 1.45*Math.random();
     }
 
     Dot.prototype = {
@@ -106,7 +104,14 @@ var canvasDots = function() {
     mousePosition.x = window.innerWidth / 2;
     mousePosition.y = window.innerHeight / 2;
 
-    setInterval(createDots, 1000/50);
+    var id = setInterval(createDots, 1000/75);
+	
+	window.onresize = function() {
+		clearInterval(id);
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		//dots.array = [];
+		return;
+	}
 };
 
 window.onload = function() {
@@ -116,9 +121,14 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         num = 35;
     }
     canvasDots();
-    //window.addEventListener('resize', function() {
-     //   width = window.innerWidth;
-     //   height = window.innerHeight;
-        //canvasDots();
-    //});
+    window.addEventListener('resize', function() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvasDots();
+    });
+    window.addEventListener("orientationchange", function() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvasDots();
+    }, false);
 };
