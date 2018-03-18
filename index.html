@@ -8,7 +8,7 @@
     <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!-- title information -->
-    <title>Nick Reimherr</title>
+    <title>Nicholas Reimherr</title>
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -18,78 +18,55 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap4.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="css/animate/animate.css">
+    <!-- mdb css -->
+    <link rel="stylesheet" href="css/mdb.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="css/style-0.0.3.css">
+    <link rel="stylesheet" href="css/style-0.0.4.css">
+    <!-- Videoplayer css -->
+    <link rel="stylesheet" href="css/player.css">
+    <!-- Mfizz css -->
+    <link rel="stylesheet" href="css/mfizz/font-mfizz.css">
 
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
-
-    <header>
-
-
-        <!--nav class="navbar navbar-expand-lg navbar-fixed-top">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link">Left Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">Left Link 2</a>
-    </li>
-  </ul>
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="nav-link">Right Link 1</a>
-    </li>
-    <li class="navbar-item">
-      <a class="nav-link">Right Link 2</a>
-    </li>
-  </ul>
-</nav-->
-
-    </header>
+<body>
 
     <!-- Top section -->
     <section id="top">
         <div id="top-img" class="bg-parallax animated fadeIn">
             <div id="top-container">
 
-                <canvas class="connecting-dots"></canvas>
-                <div class="container-fluid nav-top">
-                    <nav class="navbar navbar-expand-md navbar-light bg-faded">
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <canvas class="connecting-dots" id="connecting-dots"></canvas>
+                <nav class="navbar navbar-dark navbar-expand-md transparent" style="box-shadow: none;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
                             <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <!--a class="navbar-brand" href="#">Navbar</a-->
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#" style="color: #14496D">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#skills" style="color: #14496D">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#about" style="color: #14496D">About Me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#projects" style="color: #14496D">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="color: #14496D">More</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#top" style="color: #14496D">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#skills" style="color: #14496D">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#about" style="color: #14496D">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#projects" style="color: #14496D">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: #14496D">More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
                 <div id="top-content" class="text-center container">
                     <div id="top-header" class="animated bounce">
-                        <h3>Welcome<br>View my work below!</h3>
+                        <h3>Welcome<br>Learn more about me below!</h3>
                         <div id="top-button" class="animated slideInUp" style="">
-                            <a class="btn btn-lg btn-general btn-white js-scroll-trigger" href="#skills" role="button" title="View Work">Next</a>
+                            <a class="btn btn-lg btn-general btn-col js-scroll-trigger" href="#skills" role="button" title="View Work" style="color: #14496D">Next</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +96,7 @@
                                     <h3>Object-Oriented Programming</h3>
                                 </div>
                                 <div class="skill-item-description">
-                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                    <p>I have experience developing Object-Oriented software that adheres to the four pillars of Object-Oriented Programming.</p>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +111,7 @@
                                     <h3>Web Development</h3>
                                 </div>
                                 <div class="skill-item-description">
-                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                    <p>I have an understanding of modern web design principles and have utilized many of the most popular web development libraries such as jQuery and Bootstrap in various projects.</p>
                                 </div>
                             </div>
                         </div>
@@ -143,13 +120,13 @@
                         <div class="wow animated rollIn" data-wow-duration=".75s" data-wow-delay=".5s">
                             <div class="skill-item">
                                 <div class="skill-item-icon">
-                                    <i class="fab fa-python fa-3x"></i>
+                                    <i class="fas fa-fast-forward fa-3x"></i>
                                 </div>
                                 <div class="skill-item-title">
-                                    <h3>Python</h3>
+                                    <h3>Agile</h3>
                                 </div>
                                 <div class="skill-item-description">
-                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                    <p>I have used agile methodologies to develop and test software features for problem domains that require the ability to effectively adapt to changing requirements.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +143,7 @@
                                     <h3>SQL</h3>
                                 </div>
                                 <div class="skill-item-description">
-                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                    <p>I have experience designing and implementing relational schema in SQL. I can write queries that utilize fundamental SQL security practices such as prepared statements. </p>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +158,7 @@
                                     <h3>SDLC</h3>
                                 </div>
                                 <div class="skill-item-description">
-                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                    <p>I have experience with all phases of the software development life cycle from analysis and requirement elicitation through evolution. I have been responsible for system modeling with UML, creating and maintaining documentation and system testing.</p>
                                 </div>
                             </div>
                         </div>
@@ -193,10 +170,25 @@
                                     <i class="fa fa-comments fa-3x"></i>
                                 </div>
                                 <div class="skill-item-title">
-                                    <h3>Communication</h3>
+                                    <h3>Languages and Libraries</h3>
                                 </div>
-                                <div class="skill-item-description">
-                                    <p>Do quem tempor aliquip de iis sint sint labore incididunt et ea nisi varias minim senserit ut vidisse ipsum nulla quamquam quis. Illum id e irure cernantur. Doctrina dolor doctrina, lorem ut mentitum.</p>
+                                <div class="skill-langs">
+                                    <div class="col-sm-12">
+                                        <i class="icon-java skill-item-language-icon"></i>
+                                        <i class="icon-c skill-item-language-icon"></i>
+                                        <i class="icon-cplusplus skill-item-language-icon"></i>
+                                        <i class="icon-python skill-item-language-icon"></i>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <i class="icon-html5-alt skill-item-language-icon"></i>
+                                        <i class="icon-javascript-alt skill-item-language-icon"></i>
+                                        <i class="icon-php-alt skill-item-language-icon"></i>
+                                        <i class="icon-mysql-alt skill-item-language-icon"></i>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <i class="icon-bootstrap skill-item-language-icon"></i>
+                                        <i class="icon-jquery skill-item-language-icon"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -207,24 +199,63 @@
     </section>
 
     <section id="about">
-        <div class="container-fluid" style="height:800px; width:auto; background-color: #DCE7F4">
+        <div class="container-fluid about-container">
             <div class="container">
-                <div class="content-box">
-                    <div class="content-title">
-                        <h3>About Me</h3>
-                        <div class="content-title-underline"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4" style="text-align: center">
-                        <div class="circle-par">
-                            <div class="about-circle">
-                            </div>
+                <div class="about-content">
+                    <div class="content-box">
+                        <div class="content-title">
+                            <h3>About Me</h3>
+                            <div class="content-title-underline-alt"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4" style="text-align: center">
+                            <div class="circle-par">
+                                <img class="about-circle" src="img/team-4.jpg">
+                            </div>
+                            <div class="about-name">
+                                <h3>Nicholas Reimherr</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item" style="text-align: center">
+                                <div class="about-item-icon">
+                                    <i class="fas fa-graduation-cap fa-4x"></i>
+                                </div>
+                                <div class="about-item-title">
+                                    <h3>Education</h3>
+                                </div>
+                                <p>
+                                    The University of Texas at Arlington<br> B.S. Software Engineering<br>
+                                </p>
+                                <ul type="circle" style="list-style-position: inside; padding-left:0">
+                                    <li>
+                                    </li>
+                                </ul>
+                                <p>
+                                    (Expected Graduation: Summer 2019)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item" style="text-align: center">
+
+                                <div class="about-item-icon">
+                                    <i class="far fa-question-circle fa-4x"></i>
+                                </div>
+                                <div class="about-item-title">
+                                    <h3>Info</h3>
+                                </div>
+                                <p>
+                                    nicholasreimherr@gmail.com<br><br>
+                                </p>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/nicholas-reimherr/" class="fab fa-linkedin-in fa-2x social-media-icon"></a>
+                                    <a href="https://github.com/nickryan07" class="fab fa-github fa-2x social-media-icon"></a>
+                                    <a href="#" class="far fa-envelope fa-2x social-media-icon"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,43 +264,306 @@
 
 
     <section id="projects">
+
+        <!-- ###########    MODALS   ########### -->
+
+        <div class="modal fade" id="fabapp-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div id="carousel-fabapp" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-fabapp" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-fabapp" data-slide-to="1"></li>
+                            <li data-target="#carousel-fabapp" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./img/fabapp/fablab-1.PNG" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-fabapp" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-fabapp" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="game-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="container-canvas">
+                        <canvas id="gameCanvas" width="800" height="600">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <style>
+                        .player-container {
+                            margin-right: auto;
+                            margin-left: auto;
+                            width: 640px;
+                            height: 360px;
+                        }
+
+                    </style>
+                    <div class="player-container">
+                        <div id="player">
+                            <div id="vid-container">
+                                <div id="screen">
+                                    <img id="screenbutton" src="./img/video/play.png">
+                                </div>
+                                <video id="video">
+                                <source src="./img/video/sample.mp4">
+                                    Your browser doesn't support HTML5 video playback.
+                            </video>
+                                <div id="progress-container">
+                                    <div id="bar"></div>
+                                </div>
+                                <div id="button-container">
+                                    <img id="play" src="./img/video/play.png">
+                                    <div id="time-elapsed">
+                                        0:00 / 0:00
+                                    </div>
+                                    <img id="sound" src="./img/video/sound.png">
+                                    <div id="soundbar-container">
+                                        <div id="sbar"></div>
+                                    </div>
+                                    <img id="fullscreen" src="./img/video/fullscreen.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ###########   END MODALS   ########### -->
+
         <div class="content-box">
             <div class="content-title">
                 <h3>Projects</h3>
                 <div class="content-title-underline"></div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card-deck wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
-                            <div class="card project-card" style="width: auto;">
-                                <div class="card-top">
-                                    <i class="fa fa-users fa-5x"></i>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Fablab Waitlist</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-scheme">Go somewhere</a>
+            <div class="project-content">
+                <div class="container">
+                    <div class="row project-row">
+                        <div class="col-md-4">
+                            <div class="wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
+                                <div class="project-card" style="width: auto;">
+                                    <div class="project-card-top">
+                                        <i class="fa fa-users fa-5x"></i>
+                                    </div>
+                                    <div class="project-card-body">
+                                        <h3 class="card-title">Fablab Waitlist</h3>
+                                        <div class="card-text text-left">
+                                            <ul>
+                                                <li>
+                                                    Working to implement new features within a large existing software system
+                                                </li>
+                                                <li>
+                                                    Working to improve customer flow in the school fabrication labratory by introducing new UI elements and implementing a notifcation system
+                                                </li>
+                                                <li>
+                                                    Languages Used: PHP 5.6, HTML 5, CSS, JavaScript, SQL
+                                                </li>
+                                            </ul>
+                                            <br>
+                                        </div>
+                                        <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#fabapp-modal">
+                                         View Images
+                                        </button>
+                                        <a type="button" class="btn btn-scheme" href="https://github.com/sammyhamwi/Fabapp-waitlist">
+                                         View Github
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card project-card" style="width: auto">
-                                <div class="card-top">
-                                    <i class="far fa-comment fa-5x"></i>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">UberChat</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-scheme">Go somewhere</a>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
+                                <div class="project-card" style="width: auto">
+                                    <div class="project-card-top">
+                                        <i class="fa fa-comment-alt fa-5x"></i>
+                                    </div>
+                                    <div class="project-card-body">
+                                        <h3 class="card-title">UberChat</h3>
+                                        <div class="card-text text-left">
+                                            <ul>
+                                                <li>
+                                                    Wrote an object-oriented chat server and client
+                                                </li>
+                                                <li>
+                                                    Derived system requirements from an initial proposal document and followed all phases of the SDLC
+                                                </li>
+                                                <li>
+                                                    Used UML to design the system and maintained documentation
+                                                </li>
+                                                <li>
+                                                    Languages Used: C++ with Boost and FLTK libraries
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#fabapp-modal">
+                                         View Images
+                                        </button>
+                                        <a type="button" class="btn btn-scheme" href="https://github.com/nickryan07/UberChat">
+                                         View Github
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card project-card" style="width: auto">
-                                <div class="card-top">
-                                    <i class="fas fa-cloud fa-5x"></i>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
+                                <div class="project-card" style="width: auto">
+                                    <div class="project-card-top">
+                                        <i class="fas fa-cloud fa-5x"></i>
+                                    </div>
+                                    <div class="project-card-body">
+                                        <h3 class="card-title">Cloud Storage Server</h3>
+                                        <div class="card-text text-left">
+                                            <ul>
+                                                <li>
+                                                    Utilized a Java Servlet and Client to transfer files between a user and a remote server
+                                                </li>
+                                                <li>
+                                                    Used an Amazon Web Services EC2 instance to store uploaded files
+                                                </li>
+                                                <li>
+                                                    Used Google firebase for user authentication
+                                                </li>
+                                                <li>
+                                                    Encrypted all files before they were sent to the server and decrypted them after retrieval
+                                                </li>
+                                                <li>
+                                                    Languages Used: Java with HTTPClient and a Tomcat web servlet
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#fabapp-modal">
+                                         View Images
+                                        </button>
+                                        <a type="button" class="btn btn-scheme" href="https://github.com/nickryan07/CloudStorage">
+                                         View Github
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Cloud Storage Server</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-scheme">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row project-row">
+                            <div class="col-md-4">
+                                <div class="wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
+                                    <div class="project-card" style="width: auto">
+                                        <div class="project-card-top">
+                                            <i class="fas fa-location-arrow fa-5x"></i>
+                                        </div>
+                                        <div class="project-card-body">
+                                            <h3 class="card-title">Personal Website</h3>
+                                            <div class="card-text text-left">
+                                                <ul>
+                                                    <li>
+                                                        Wrote a personal webpage using a modern design
+                                                    </li>
+                                                    <li>
+                                                        Used JS for the landing design
+                                                    </li>
+                                                    <li>
+                                                        Languages Used: HTML 5, JavaScript, CSS
+                                                    </li>
+                                                    <li>
+                                                        Libraries Used: Bootstrap 4, jQuery, MDBootstrap, Wow.js
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#fabapp-modal">
+                                             View Github
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
+                                    <div class="project-card" style="width: auto">
+                                        <div class="project-card-top">
+                                            <i class="fas fa-rocket fa-5x"></i>
+                                        </div>
+                                        <div class="project-card-body">
+                                            <h3 class="card-title">Web Apps</h3>
+                                            <div class="card-text text-left">
+                                                <ul>
+                                                    <li>
+                                                        Completed an online javascript course where I created a stylized HTML5 video player. Expanded the project on my own by adding fullscreen stylization.
+                                                    </li>
+                                                    <li>
+                                                        Completed an online course where I made a table-tennis game in javascript.
+                                                    </li>
+                                                    <li>
+                                                        Languages Used: JavaScript, HTML 5, CSS
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#video-modal">
+                                             Demo Video
+                                            </button>
+                                            <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#game-modal">
+                                             Demo Game
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="wow animated fadeInDown" data-wow-duration=".75s" data-wow-delay=".3s" style="text-align: center">
+                                    <div class="project-card" style="width: auto">
+                                        <div class="project-card-top">
+                                            <i class="fas fa-shopping-cart fa-5x"></i>
+                                        </div>
+                                        <div class="project-card-body">
+                                            <h3 class="card-title">Robot Shop</h3>
+                                            <div class="card-text text-left">
+                                                <ul>
+                                                    <li>
+                                                        Designed a GUI based object oriented system for a fictional robot shop
+                                                    </li>
+                                                    <li>
+                                                        Used UML to create design documentation
+                                                    </li>
+                                                    <li>
+                                                        Used agile practices with 6 week-long sprints
+                                                    </li>
+                                                    <li>
+                                                        Languages Used: C++ with the FLTK library
+                                                </ul>
+                                                <br>
+                                            </div>
+                                            <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#fabapp-modal">
+                                             View Images
+                                            </button>
+                                            <button type="button" class="btn btn-scheme" data-toggle="modal" data-target="#fabapp-modal">
+                                             View Github
+                                            </button>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -279,19 +573,56 @@
         </div>
     </section>
 
-    <h1>UNDER CONSTRUCTION</h1>
+    <section id="footer">
+
+        <!--Footer-->
+        <footer class="page-footer font-small pt-4 mt-4">
+
+            <!--Footer Links-->
+            <div class="container-fluid text-center text-md-left">
+            </div>
+            <div class="footer-copyright py-3 text-center">
+                <div class="row">
+                    <div class="col-md-4 text-right">
+                        Built by Nicholas Reimherr -
+                        <a href="https://github.com"> Source Code </a>
+                    </div>
+                    <div class="col-md-8">
+                        Return: 
+                        <a class="js-scroll-trigger" href="#top">Home</a> /
+                        <a class="js-scroll-trigger" href="#skills">Skills</a> /
+                        <a class="js-scroll-trigger" href="#about">About</a> /
+                        <a class="js-scroll-trigger" href="#projects">Projects</a>
+                    </div>
+                </div>
+            </div>
+            <!--/.Footer Links-->
+        </footer>
+        <!--/.Footer-->
+    </section>
+
+    <!--h1>UNDER CONSTRUCTION</h1>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br-->
     <!-- js -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap/bootstrap4.min.js"></script>
     <script src="js/angular.min.js"></script>
-    <script src="js/dots-0.0.4.js"></script>
+    <script src="js/tennis.js"></script>
+    <script src="js/dots-0.0.5.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/custom-0.0.1.js"></script>
+    <script src="js/player.js"></script>
+
+    <script>
+
+
+    </script>
 </body>
 
 

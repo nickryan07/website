@@ -1,0 +1,107 @@
+/*
+	darkgray: 30, 30, 30
+	lightgray: 70, 70, 70
+	lightblue: 50, 170, 220
+*/
+
+#player {
+    width: 640px;
+	height: 360px;
+	background-color: rgb(30, 30, 30);
+	display: inline-block;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+
+img {
+	background-color: rgb(70, 70, 70);
+}
+img:hover {
+	background-color: rgb(232, 12, 92);
+}
+img, #progress-container, #soundbar-container {
+	cursor: pointer;
+}
+
+#vid-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+    background-color:rgba(0, 0, 0, .8);
+    
+    
+}
+	video {
+        position: relative;
+		height: -webkit-calc(100% - 55px);
+        height:    -moz-calc(100% - 55px);
+        height:         calc(100% - 55px);
+		width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+	}
+	#screen {
+		height: -webkit-calc(100% - 55px);
+        height:    -moz-calc(100% - 55px);
+        height:         calc(100% - 55px);
+		width: 100%;
+		line-height: 360px;
+		text-align: center;
+		position: absolute;
+		z-index: 1 !important;
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	}
+	#screen img {
+        position: relative;
+        top: 30%;
+        transform: translateY(-70%);
+	}
+#progress-container {
+	background-color: rgb(70, 70, 70);
+}
+
+#bar {
+    height: 5px;
+    width: 0%;
+    background-color: rgb(232, 12, 92);
+}
+#button-container {
+    background-color: rgb(30, 30, 30);
+	height: 50px;
+    padding-bottom: 5px;
+}
+#button-container > * {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+#time-elapsed {
+	color: rgb(232, 12, 92);
+	line-height: 50px;
+	cursor: pointer;
+}
+#sound {
+	margin-right: 0;
+}
+#soundbar-container {
+	margin-left: 0;
+	width: 100px;
+	height: 10px;
+	background-color: rgb(70, 70, 70);
+}
+	#sbar {
+		height: 100%;
+		width: 10%;
+		background-color: rgb(232, 12, 92);
+	}
+#fullscreen {
+	float: right;
+}
